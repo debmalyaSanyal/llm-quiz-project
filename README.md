@@ -1,4 +1,3 @@
-````markdown
 # LLM Analysis Quiz Bot 🤖
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green?style=for-the-badge&logo=node.js)
@@ -97,7 +96,6 @@ The URL to submit to the Google Form is your `ngrok` URL + the `/api/quiz` path:
 
 **`https://something-random.ngrok-free.app/api/quiz`**
 
------
 
 ## 🧠 How It Works: The Task Router
 
@@ -113,11 +111,7 @@ The core logic is in the `solveQuiz` function. It acts as a "smart" router:
 5.  **Submit:** It `POST`s the correct answer to the `/submit` URL.
 6.  **Recurse:** If the submission response contains a *new* `url`, the bot calls `solveQuiz` all over again with the new URL, starting the process over.
 
------
 
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
-```
-```
